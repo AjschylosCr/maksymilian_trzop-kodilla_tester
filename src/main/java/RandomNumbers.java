@@ -1,12 +1,18 @@
 public class RandomNumbers {
     public static void main(String[] args) {
-
-        for(int i=0; i<30; i++)
+        runSimulation(7);
     }
-    static int randomBetween (int start, int end) {
-        Random random = new Random();
-        int a1 = randomnextInt(end - start +1);
-        int a2 = a1 +start;
-        return a2;
+
+    public static void runSimulation(int n) {
+        int sum = 0;
+        java.util.Random rand = new java.util.Random();
+        for (int i = 1; i <= n; i++) {
+            int sim = rand.nextInt(30);
+            sum = sum + sim;
+            System.out.print(sim);
+        }
+
+        System.out.println();
+        System.out.println("Total = " + sum);
     }
 }
