@@ -1,3 +1,4 @@
-rootProject.name = 'com.kodilla-course'
-include 'com.kodilla-intro'
+rootProject.name = 'com.com.kodilla-course'
+include 'com.com.kodilla-intro'
+include 'kodilla-basic-test'
 
