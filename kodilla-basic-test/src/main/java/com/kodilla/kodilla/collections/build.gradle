@@ -1,0 +1,16 @@
+package com.kodilla.kodilla.collections
+
+plugins {
+    id 'java'
+}
+
+group 'com.com.com.kodilla'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
