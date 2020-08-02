@@ -19,7 +19,9 @@ public class CarsListApplication {
         cars.add(new Pontiac(130));
 
         cars.remove(1);
-//        cars.remove();
+        Honda honda = new Honda(11);
+        cars.add(honda);
+        cars.remove(honda);
 
         for (Car car : cars){
             System.out.println("-----------");

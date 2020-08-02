@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Stamp {
     private String name;
     private String measurements;
-    private String ifStamped;
+    private boolean isStamped;
 
-    public Stamp (String name, String measurements, String ifStamped){
+    public Stamp (String name, String measurements, boolean isStamped){
         this.name = name;
         this.measurements = name;
-        this.ifStamped = ifStamped;
+        this.isStamped = isStamped;
     }
     public String getName() {
         return name;
@@ -18,8 +18,8 @@ public class Stamp {
     public String getMeasurements() {
         return measurements;
     }
-    public String getIfStamped() {
-        return ifStamped;
+    public boolean getIsStamped() {
+        return isStamped;
     }
 
     @Override public boolean equals(Object o){
@@ -31,10 +31,10 @@ public class Stamp {
         return
                 Objects.equals(name, stamp.name)
                         && Objects.equals(measurements, stamp.measurements)
-                        && Objects.equals(ifStamped, stamp.ifStamped);
+                        && Objects.equals(isStamped, stamp.isStamped);
     }
     @Override public int hashCode(){
-        return Objects.hash(name, measurements, ifStamped);
+        return Objects.hash(name, measurements, isStamped);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Stamp {
         return "Stamp{" +
                 "name='" + name + '\'' +
                 ", measurements='" + measurements + '\'' +
-                ", ifStamped='" + ifStamped + '\'' +
+                ", isStamped='" + isStamped + '\'' +
                 '}';
     }
 }
