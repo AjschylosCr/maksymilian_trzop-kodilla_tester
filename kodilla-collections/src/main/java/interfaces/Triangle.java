@@ -1,4 +1,4 @@
-package com.kodilla.collections.interfaces;
+package interfaces;
 
 public class Triangle implements Shape {
 

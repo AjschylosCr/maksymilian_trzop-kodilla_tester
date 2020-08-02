@@ -6,7 +6,7 @@ import com.kodilla.collections.interfaces.Triangle;
 import com.kodilla.collections.interfaces.Shape;
 
 public class ShapeUtils {
-    public static void displayShapeName (Shape shape) {
+    public static void displayShapeInfo (Shape shape) {
         System.out.println("-----------");
         System.out.println("Shape kind "+getShapeName(shape));
         System.out.println("Get area " +shape.getArea());

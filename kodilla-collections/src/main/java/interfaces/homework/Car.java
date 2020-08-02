@@ -1,4 +1,4 @@
-package com.kodilla.collections.interfaces.homework;
+package interfaces.homework;
 
 public interface Car {
     int getSpeed();

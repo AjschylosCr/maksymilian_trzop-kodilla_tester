@@ -1,8 +1,7 @@
-package com.kodilla.collections.interfaces;
+package interfaces;
 
 
-
-public class Circle implements Shape{
+public class Circle implements Shape {
     private double radius;
 
     public Circle(double radius){
@@ -17,10 +16,4 @@ public class Circle implements Shape{
         return Math.PI * radius * radius;
     }
 
-    @Override
-    public String toString() {
-        return "Circle{" +
-                "radius=" + radius +
-                '}';
-    }
 }
