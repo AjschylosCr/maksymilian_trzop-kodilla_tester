@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Grades {
-    private List<Double> grades = new ArrayList<>()
+    private List<Double> grades = new ArrayList<>();
             public Grades(double... grades){
         for (double grade : grades)
         this.grades.add(grade);
@@ -15,4 +15,9 @@ public class Grades {
         sum += grade;
         return sum / grades.size();
             }
+
+    @Override
+    public String toString() {
+        return "Grades " + grades.toString();
+    }
 }
