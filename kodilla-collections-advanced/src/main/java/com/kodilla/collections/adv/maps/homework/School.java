@@ -4,10 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-    private List<Double> grades = new ArrayList<>();
-    public Classes(String... classes){
-        for (String class : classes)
-            this.classes.add(class):
+    private List<Integer> schools = new ArrayList<>();
+    private String schoolName;
+
+    public School(String schoolName, Integer... schools) {
+        this.schoolName = schoolName;
+        for (Integer school : schools)
+            this.schools.add(school);
     }
-    public String
+
+    public int getSum(){
+        int sum = 0;
+        for (int number: schools)
+            sum += number;
+        return sum;
+    }
+
+    public String getSchoolName(){
+        return schoolName;
+    }
 }

@@ -5,16 +5,18 @@ import java.util.List;
 
 public class Grades {
     private List<Double> grades = new ArrayList<>();
-            public Grades(double... grades){
+
+    public Grades(double... grades) {
         for (double grade : grades)
-        this.grades.add(grade);
-            }
-            public double getAverage(){
+            this.grades.add(grade);
+    }
+
+    public double getAverage() {
         double sum = 0.0;
-        for (double grade : grades);
+        for (double grade : grades)
         sum += grade;
         return sum / grades.size();
-            }
+    }
 
     @Override
     public String toString() {
