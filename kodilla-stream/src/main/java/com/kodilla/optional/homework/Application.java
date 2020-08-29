@@ -1,9 +1,16 @@
 package com.kodilla.optional.homework;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Application {
     public static void main(String[] args) {
-        Student student = new Student("Ivan", );
-        Student student1 = new Student("Fedor", );
-        Student student2 = new Student("Izydor", );
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("Ivan", new Teacher("Sknerus")));
+        studentList.add(new Student("Fedor", null));
+        studentList.add(new Student("Izydor", new Teacher("Wolland")));
+        for (Student student: studentList){
+            System.out.println("Student "+student.name+" teacher "+student.getTeacher().getName());
+        }
     }
 }
