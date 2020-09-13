@@ -5,6 +5,4 @@ include 'kodilla-collections'
 include 'kodilla-collections'
 include 'kodilla-collections-advanced'
 include 'kodilla-collections:kodilla-stream'
-findProject(':kodilla-collections:kodilla-stream')?.name = 'kodilla-stream'
 include 'kodilla-stream'
-
